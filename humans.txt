@@ -1,0 +1,15 @@
+/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* zurb.com */
+/* humanstxt.org */
+
+Created at Software Freedom Day 2013 at RIT.
+
+/* Developers */
+  Brandon Litell
+  Daniel Jost
+  Colden Cullen
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Orbit, Reveal
+  Software: Coda, Textmate, Git

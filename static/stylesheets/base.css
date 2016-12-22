@@ -1,0 +1,24 @@
+html,body{background:#ecf0f1;color:#222;height:100%;padding-bottom:75px}
+h1,h2,h3,h4,h5,h6{font-family:"Raleway","Helvetica",sans-serif;font-weight:200}
+p,span{font-family:"Raleway","Helvetica",sans-serif;font-weight:300}
+#page_title{width:100%;text-align:center;padding:20px 0;margin-bottom:20px;background-color:#2980b9}#page_title h1{margin:0;color:#ecf0f1}
+#music_search{font-size:25px}
+#player{background:#bdc3c7;width:100%;height:75px;position:fixed;bottom:0}
+#player_song_length{position:fixed;bottom:75px;width:100%;height:7px;background:#2980b9}
+#player_album_art{height:75px;position:relative;display:block;margin-left:auto;width:75px}
+#player_song_title{height:20px;line-height:1;margin:13px 0 10px 0;overflow:hidden}
+#player_song_artist{height:18px;line-height:1;overflow:hidden}
+#player_play_button{position:absolute;width:90px;height:75px;text-align:center;z-index:999;left:47%;color:#34495e;font-size:75px;transition:0.2s all}#player_play_button:hover{color:#2980b9}
+@media (max-width:768px){#player_play_button{left:75%}}#player_volume_form{margin-top:30px;float:right}
+#volume_icon_left,#player_volume_slider,#volume_icon_right{display:inline-block}
+#volume_icon_left,#volume_icon_right{font-size:20px;color:#34495e}
+#volume_icon_right{margin-left:7px;margin-right:60px}
+input:focus,select:focus,textarea:focus,button:focus{-webkit-box-shadow:none !important;box-shadow:none !important;transition:none;outline:none}
+#music_search:focus{border:2px solid #7f8c8d}
+input[type='range']{position:relative;-webkit-appearance:none;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background:#34495e;height:20px}input[type='range']::-webkit-slider-thumb{-webkit-appearance:none;-moz-border-radius:100px;-webkit-border-radius:100px;background-color:#2980b9;height:20px;width:20px}
+#songlist ul li.song{cursor:pointer;display:block;padding:10px;list-style-type:none;color:#222}#songlist ul li.song .icon-play{font-size:35px;width:35px;height:35px;position:absolute;top:50%;left:50%;margin-left:-17.5px;display:block}
+#songlist ul li.song p{margin:0}
+#songlist ul li.song .songtitle{font-size:15px;line-height:24px;color:inherit}
+#songlist ul li.song .songartist{font-size:14px;line-height:21px;color:inherit}
+#songlist ul li.song .songservice{margin-top:-10px;max-width:50px;max-height:50px}
+#songlist ul li.song:nth-child(odd){background-color:#bdc3c7}

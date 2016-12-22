@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OpenMusic</title>
+    <link rel="shortcut icon" href="/favicon.ico" /> 
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:300,200'>
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="/stylesheets/base.css" />
+    <link rel="stylesheet" href="/stylesheets/icon-openmusic.css" />
+    
+    <script src="js/custom.modernizr.js"></script>
+</head>
+<body>
+
+	<header id="page_title">
+	    <h1>OpenMusic</h1>
+    </header>
+    
+    <div class="row" style="padding-bottom: 75px">
+        
+		<div class="small-12 large-8 large-centered columns">
+			<form id="music_search_form" name="">
+			    <input id="music_search" class="search main" type="text" placeholder="Search for music..."/>
+			</form>
+			
+			<div id="songlist"></div>
+			
+		</div>
+	</div>
+	
+	<!--
+	<footer class="row">
+	    <hr />
+	    <div class="small-12 large-6 columns">
+	        <p>&copy; 2013
+	            <a href="http://coldencullen.com" target="_blank">Colden Cullen</a>,
+	            <a href="http://danieljost.com" target="_blank">Daniel Jost</a>,
+	            <a href="http://brandonlittell.com" target="_blank">Brandon Littell</a>
+            </p>
+	    </div>
+	    <div class="small-12 large-6 columns">
+	        <p style="text-align: right;">Created for Software Freedom Day 2013 at RIT.</p>
+	    </div>
+	</footer>
+	-->
+    
+    <div id="player">
+    <div id="player_song_length"></div>
+        <div class="row">
+            <div class="large-2 hide-for-small columns">
+                <img id="player_album_art" src="">
+            </div>
+            <div id="player_song_info" class="small-10 large-4 columns">
+                <h4 id="player_song_title">--</h4>
+                <h5 id="player_song_artist">--</h5>
+            </div>
+            <div id="player_play_button" class="icon-play"></div>
+            <div class="large-6 hide-for-small columns">
+                <div id="player_volume_form">
+                    <div id="volume_icon_left" class="icon-volume-mute-2"></div>
+                    <input id="player_volume_slider" type="range" min="0" max="100" step="1" value="100" />
+                    <div id="volume_icon_right" class="icon-volume-high"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    
+    <script src="/js/openmusic.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

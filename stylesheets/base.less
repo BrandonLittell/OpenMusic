@@ -1,0 +1,175 @@
+@body-bg: #ecf0f1;
+@header-bg: #2980b9;
+@header-bg-dark: #34495e;
+@player-bg: #bdc3c7;
+@button-color: #34495e;
+@button-color-hover: #2c3e50;
+
+@text-dark: #222;
+@text-light: #ecf0f1;
+@font-headers: "Raleway", "Helvetica", sans-serif;
+
+@player-height: 75px;
+
+/*#region Tag Overrides*/
+html,
+body {
+    background: @body-bg;
+    color: @text-dark;
+    height: 100%;
+    padding-bottom: @player-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @font-headers;
+    font-weight: 200;
+}
+
+p, span {
+    font-family: @font-headers;
+    font-weight: 300;
+}
+/*#endregion*/
+
+
+
+
+#page_title {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    
+    background-color: @header-bg;
+    
+    h1 {
+        margin: 0;
+        
+        color: @text-light;
+    }
+}
+
+#music_search {
+    font-size: 25px;
+}
+
+/* Player */
+#player {
+  background: @player-bg;
+  width: 100%;
+  height: @player-height;
+  position: fixed;
+  bottom: 0;
+}
+
+#player_song_length {
+    position: fixed;
+    bottom: @player-height;
+    width: 100%;
+    height: 7px;
+    background: @header-bg;
+}
+
+#player_album_art {
+    height: @player-height;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    width: @player-height;
+}
+
+#player_song_title {
+    height: 20px;
+    line-height: 1;
+    margin: 13px 0 10px 0;
+    overflow: hidden;
+}
+
+#player_song_artist {
+    height: 18px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+#player_play_button {
+    position: absolute;
+    width: @player-height * 1.2;
+    height: @player-height;
+    text-align: center;
+    z-index: 999;
+    left: 47%;
+    color: @button-color;
+    font-size: @player-height;
+    transition: 0.2s all;
+	
+	&:hover {
+	    color: @header-bg;
+	}
+}
+
+@media (max-width: 768px) {
+    #player_play_button {
+        left: 75%;
+    }
+}
+
+#player_volume_form {
+    margin-top: 30px;
+    float: right;
+}
+
+#volume_icon_left,
+#player_volume_slider,
+#volume_icon_right {
+    display: inline-block;
+}
+
+#volume_icon_left,
+#volume_icon_right {
+    font-size: 20px;
+    color: @button-color;
+}
+
+#volume_icon_right {
+    margin-left: 7px;
+    margin-right: 60px;
+}
+
+//Disable focus outlines
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    transition: none;
+    outline: none;
+}
+
+#music_search:focus {
+    border: 2px solid #7f8c8d;
+}
+
+/* Range style */
+input[type='range'] {
+	position: relative;
+	//width:300px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+    background: @header-bg-dark;
+	height: 20px;
+	
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		background-color: @header-bg;
+		height: 20px;
+		width: 20px;
+	}
+}
+
+@import "song.less";

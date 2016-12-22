@@ -1,0 +1,59 @@
+#songlist {
+    
+    ul {
+        
+        li.song {
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            list-style-type: none;
+            color: @text-dark;
+            
+            //margin-bottom: 10px;
+            
+            .icon-play {
+                @icon-size: 35px;
+                font-size: @icon-size;
+                width: @icon-size;
+                height: @icon-size;
+                
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                //margin-top: -(@icon-size / 2);
+                margin-left: -(@icon-size / 2);
+                
+                display: block;
+                //margin: 0 auto;
+            }
+            
+            p {
+                margin: 0;
+            }
+            
+            .songtitle {
+                font-size: 15px;
+                line-height: 24px;
+                color: inherit;
+            }
+            
+            .songartist {
+                font-size: 14px;
+                line-height: 21px;
+                color: inherit;
+            }
+            
+            .songservice {
+                //background-image: url();
+                @image-size: 50px;
+                margin-top: -10px;
+                max-width: @image-size;
+                max-height: @image-size;
+            }
+        }
+        
+        li.song:nth-child(odd) {
+            background-color: #bdc3c7;
+        }
+    }
+}
